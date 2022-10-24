@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Montserrat:wght@300;400&family=Pacifico&family=Prompt:wght@700&family=Sora:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script>
+      $(function(){
+        $('#header').load('header.html');
+        $('#footer').load('footer.html');
+      })
+    </script>
+  </head>
+  <body id="contactme">
+    <div id="header"></div>
+
+    <!-- Content -->
+    <div class="title-contactme">
+      <h1>Hi, anything you want to say to me, feel free to write it here. Thank You</h1>
+    </div>
+    <div class="container-form">
+      <form class="" action="index.html" method="post">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name...">
+
+        <label for="email">Email:</label>
+        <input type="text" name="emailaddress" placeholder="Your Email...">
+
+        <label for="phonenumber">Phone Number:</label>
+        <input type="number" name="phonenumber" value="">
+
+        <label for="subject">Subject:</label>
+        <textarea id="subject" name="subject" placeholder="Write something here..." rows="8" cols="80"></textarea>
+
+        <input type="submit" value="submit">
+      </form>
+    </div>
+
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+
+  </body>
+</html>

@@ -1,0 +1,381 @@
+*, html{
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --main-font-family : Sora;
+  --cursor-hover-color: #A5C9CA;
+  --primary-color: #CDFCF6;
+}
+
+/* Navigation Bar */
+.container-navbar{
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container-nav-brand{
+  margin-left: 120px;
+}
+.nav-brand{
+  color: black;
+  font-family: Pacifico;
+  font-size: 1.6em;
+}
+.container-nav-menu{
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  margin-right: 120px;
+}
+.nav-menu{
+  text-decoration: none;
+  color: black;
+  font-family: Montserrat;
+  cursor: pointer;
+}
+.nav-menu:hover{
+  color: var(--cursor-hover-color);
+  transition-duration: 0.3s;
+}
+.hamburger{
+  display: none;
+  cursor: pointer;
+  margin-right: 25px;
+}
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: black;
+}
+/* Home Page */
+.container-home{
+  margin: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+/* Home 1st part */
+.container-img{
+  width: 360px;
+  height: 540px;
+  background-color: #CDFCF6;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -8px 8px 10px rgba(0, 0, 0, 0.1);
+
+}
+.img-profile{
+  width: 200px;
+  border-radius: 100%;
+  margin-top: 20px;
+  margin: 30px auto;
+}
+.name{
+  font-family: Francois One;
+  margin-top: 20px;
+}
+.hr-home{
+  width: 30%;
+  height: 3px;
+  margin: 40px auto;
+  background-color: #8758FF;
+  color: #8758FF;
+}
+.p-intro{
+  font-family: Sora;
+  font-size: 1.2em;
+}
+.p-intro-1{
+  font-family: Sora;
+  font-size: 1em;
+}
+.container-footer-intro{
+  background-color: white;
+  height: 50px;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon{
+  font-size: 25px;
+  padding: 0 15px;
+  cursor: pointer;
+}
+/* Home 2nd part */
+.container-intro{
+  width: 360px;
+  height: 540px;
+  margin-left: 40px;
+}
+.h1-intro{
+  font-size: 6em;
+  font-family: Prompt;
+  font-weight: bolder;
+}
+.container-btn{
+  display: flex;
+  align-items: ;
+  width: 100%;
+  margin: 50px 0;
+}
+.intro-btn{
+  width: 140px;
+  height: 35px;
+  margin-right: 10px;
+  text-transform: uppercase;
+  font-family: Prompt;
+  font-weight: bolder;
+  border-radius: 50px;
+  border-width: thin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+
+}
+.btn-a{
+  color: white;
+  background-color: #1D1CE5;
+  border-color: #1D1CE5;
+
+  border-color: black;
+
+}
+.btn-a:hover{
+  color: black;
+  background-color: white;
+  border-width: thin;
+  border: 2px solid;
+  transition-duration: 0.3s;
+}
+.btn-b{
+  background-color: white;
+}
+.btn-b:hover{
+  background-color: #1D1CE5;
+  color: white;
+  border: none;
+  transition-duration: 0.3s;
+}
+
+
+/* Styling */
+.container-footer-intro a, .item-6 a{
+  text-decoration: none;
+  color: black;
+}
+
+
+/* About Me Page */
+.container-body{
+  width: 60%;
+  margin: 80px auto 120px auto;
+  text-align: justify;
+}
+.title{
+  font-family: var(--main-font-family);
+  font-size: 2.5em;
+}
+.container-main{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.img-style{
+  width: 300px;
+}
+.content{
+  width: 650px;
+  font-family: var(--main-font-family);
+  font-size: 1.2em;
+}
+
+/* Contact Me Page */
+.title-contactme{
+  font-family: var(--main-font-family);
+}
+.container-form, .title-contactme{
+  width: 50%;
+  margin: 50px auto;
+}
+input[type=text], input[type=number], textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit]{
+  background-color: blue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* My project */
+.myproject-h1{
+  text-align: center;
+  padding-top: 300px;
+  font-family: monospace;
+}
+
+/* Footer */
+.container-footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  height: 100px;
+}
+#aboutme .container-footer{
+  position: static;
+}
+.container-cr{
+  margin: auto 0 auto 60px;
+}
+.grid-container{
+  margin: 15px 60px 15px auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 60%;
+  text-align: center;
+  align-items: center;
+}
+.p-footer, h4{
+  font-family: Sora;
+  font-size: 0.8em;
+}
+.icon-ft{
+  font-size: 18px;
+  margin: 0 5px;
+}
+
+/* Desktop smaller */
+@media only screen and (max-width: 1600px) {
+  .container-nav-brand{
+    margin-left: 80px;
+  }
+  .container-nav-menu{
+    width: 40%;
+    margin-right: 80px;
+  }
+  .grid-container{
+    margin: 15px 60px 15px auto;
+    display: grid;
+    width: 80%;
+  }
+  .container-body{
+    width: 70%;
+  }
+}
+
+/* Tablet */
+@media only screen and (max-width: 1000px){
+  .container-nav-brand{
+    margin-left: 80px;
+  }
+  .container-nav-menu{
+    width: 50%;
+    margin-right: 80px;
+  }
+  .container-body{
+    width: 80%;
+  }
+}
+
+/* For smartphone */
+@media only screen and (max-width: 800px) {
+  /* Header (Navigation ) */
+  .container-nav-brand{
+    margin-left: 50px;
+  }
+  /* Hamburger Menu */
+  .hamburger{
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .container-nav-menu{
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .nav-menu{
+    margin: 16px 0;
+  }
+  .container-nav-menu.active{
+    left: 0;
+  }
+  /* Home */
+  .container-home{
+    flex-direction: column;
+  }
+  /* Home 2nd set */
+  .container-intro{
+    margin: 90px 0 0 0;
+    width: 360px;
+    height: 440px;
+  }
+  /* AboutMe Page */
+  .container-main{
+    margin-top: 50px;
+    flex-direction: column;
+  }
+  .content{
+    margin-top: 20px;
+    margin-bottom: 70px;
+    width: 100%;
+  }
+  .b{
+     flex-direction: column-reverse;
+  }
+  /* Footer */
+  .container-footer{
+    position: static;
+    margin: auto auto;
+    text-align: center;
+    width: inherit;
+    display: block;
+  }
+  .container-cr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+  }
+  .grid-container{
+    display: none;
+  }
+}
